@@ -145,10 +145,11 @@ Levels get harder over time
 
 Fun, simple, and great for emotional intelligence training!
 
-🖼️ Screenshots (Add your images here)
-/screenshots/home.png
-/screenshots/gameplay.png
-/screenshots/result.png
+🖼️ Screenshots 
+[IMG-20251113-WA0014](https://github.com/user-attachments/assets/c034389a-af16-4e84-ad91-f845ef4fe46d)
+![IMG-20251113-WA0013](https://github.com/user-attachments/assets/01a9219f-9911-4eeb-88d9-829566bdfd29)
+![IMG-20251113-WA0012](https://github.com/user-attachments/assets/ec1b82f3-33e6-4875-94f5-c7118d4d58a6)
+![IMG-20251113-WA0011](https://github.com/user-attachments/assets/662bf88e-f54c-4efb-9559-34916fb9f968)
 
 
 You can upload screenshots into screenshots/ folder and link them here.
@@ -160,7 +161,8 @@ Steps:
 
 Fork the repo
 
-Create a new branch
+Create a new branch!
+
 
 Commit changes
 
