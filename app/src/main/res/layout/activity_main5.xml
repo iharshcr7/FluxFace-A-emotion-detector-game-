@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/parchment_texture"
+    tools:context=".MainActivity5">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/buttonLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/cinzel"
+        android:text="Emotion Detection"
+        android:textColor="@color/ink_text"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/happyButton"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="Happy Button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/happy_btn" />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/happyButton"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@drawable/ancient_gold_button"-->
+<!--            android:fontFamily="@font/cinzel"-->
+<!--            android:text="Happy"-->
+<!--            android:textColor="@color/ancient_gold_button_text"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+
+        <ImageButton
+            android:id="@+id/neutralButton"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="Neutral Button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/neutral" />
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/neutralButton"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:background="@drawable/aged_bronze_button"-->
+<!--            android:fontFamily="@font/cinzel"-->
+<!--            android:text="Neutral"-->
+<!--            android:textColor="@color/aged_bronze_button_text"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+        <ImageButton
+            android:id="@+id/sadButton"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="15dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:contentDescription="Sad Button"
+            android:scaleType="fitCenter"
+            android:src="@drawable/sad_btn" />
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/sadButton"-->
+<!--            android:layout_width="250dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:background="@drawable/aged_bronze_button"-->
+<!--            android:fontFamily="@font/cinzel"-->
+<!--            android:text="Sad"-->
+<!--            android:textColor="@color/aged_bronze_button_text"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+
+    </LinearLayout>
+
+</RelativeLayout>

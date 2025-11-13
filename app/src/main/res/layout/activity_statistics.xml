@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/parchment_texture"
+    android:orientation="vertical"
+    tools:context=".StatisticsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBackStats"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            app:srcCompat="@drawable/ic_back_arrow" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/cinzel"
+            android:text="Statistics"
+            android:textColor="@color/ink_text"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/StatHeader"
+                android:text="Best Times" />
+
+            <TextView
+                android:id="@+id/statBestEasy"
+                style="@style/StatText"
+                android:text="Calm Mode: --:--" />
+
+            <TextView
+                android:id="@+id/statBestNormal"
+                style="@style/StatText"
+                android:text="Normal Mode: --:--" />
+
+            <TextView
+                android:id="@+id/statBestHard"
+                style="@style/StatText"
+                android:text="Challenge Mode: --:--" />
+
+            <TextView
+                style="@style/StatHeader"
+                android:layout_marginTop="24dp"
+                android:text="Game Stats" />
+
+            <TextView
+                android:id="@+id/statTotalPlayed"
+                style="@style/StatText"
+                android:text="Total Games Played: 0" />
+
+            <TextView
+                android:id="@+id/statWinPercentage"
+                style="@style/StatText"
+                android:text="Win Percentage: 0%" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

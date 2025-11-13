@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/game_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@android:color/white"
+    android:padding="16dp"
+    tools:context=".GameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:srcCompat="@drawable/ic_back_arrow"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="Back" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="18sp"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/cinzel"/>
+
+        <TextView
+            android:id="@+id/timerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="18sp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/cinzel"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/modeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        tools:text="Game Mode" />
+
+    <TableLayout
+        android:id="@+id/sudoku_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:stretchColumns="*">
+        <TableRow>
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+        </TableRow>
+        <TableRow>
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+        </TableRow>
+        <TableRow>
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+        </TableRow>
+        <TableRow>
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+        </TableRow>
+        <TableRow>
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+        </TableRow>
+        <TableRow>
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+        </TableRow>
+        <TableRow>
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+        </TableRow>
+        <TableRow>
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+        </TableRow>
+        <TableRow>
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+            <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" /> <TextView style="@style/SudokuCell" />
+        </TableRow>
+    </TableLayout>
+
+    <GridLayout
+        android:id="@+id/number_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="3"
+        android:rowCount="3">
+
+        <Button android:id="@+id/button1" android:layout_margin="4dp" android:text="1" android:textColor="#FFFFFF" android:backgroundTint="#616161"/>
+        <Button android:id="@+id/button2" android:layout_margin="4dp" android:text="2" android:textColor="#FFFFFF" android:backgroundTint="#616161"/>
+        <Button android:id="@+id/button3" android:layout_margin="4dp" android:text="3" android:textColor="#FFFFFF" android:backgroundTint="#616161"/>
+        <Button android:id="@+id/button4" android:layout_margin="4dp" android:text="4" android:textColor="#FFFFFF" android:backgroundTint="#616161"/>
+        <Button android:id="@+id/button5" android:layout_margin="4dp" android:text="5" android:textColor="#FFFFFF" android:backgroundTint="#616161"/>
+        <Button android:id="@+id/button6" android:layout_margin="4dp" android:text="6" android:textColor="#FFFFFF" android:backgroundTint="#616161"/>
+        <Button android:id="@+id/button7" android:layout_margin="4dp" android:text="7" android:textColor="#FFFFFF" android:backgroundTint="#616161"/>
+        <Button android:id="@+id/button8" android:layout_margin="4dp" android:text="8" android:textColor="#FFFFFF" android:backgroundTint="#616161"/>
+        <Button android:id="@+id/button9" android:layout_margin="4dp" android:text="9" android:textColor="#FFFFFF" android:backgroundTint="#616161"/>
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+
+        <ImageButton
+            android:id="@+id/btnUndo"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/undo"
+            android:src="@drawable/undo"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Undo"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:tint="@null" />
+
+        <ImageButton
+            android:id="@+id/btnErase"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+
+            app:srcCompat="@drawable/eraser"
+            android:src="@drawable/eraser"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Erase"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:tint="@null" />
+
+        <ImageButton
+            android:id="@+id/btnCheckSolution"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            app:srcCompat="@drawable/check"
+            android:src="@drawable/check"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Check Solution"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            app:tint="@null" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="calm_bg">#E3F2FD</color>
+    <color name="calm_grid">#FFFFFF</color>
+    <color name="calm_text">#0D47A1</color>
+
+    <color name="normal_bg">#FFFFFF</color>
+    <color name="normal_grid">#000000</color>
+    <color name="normal_text">#000000</color>
+
+    <color name="challenge_bg">#212121</color>
+    <color name="challenge_grid">#FF1744</color>
+    <color name="challenge_text">#FF1744</color>
+
+    <color name="calm_button_text">#FFFFFF</color>
+    <color name="normal_button_text">#FFFFFF</color>
+    <color name="challenge_button_text">#FFFFFF</color>
+
+    <color name="calm_button_bg">#0D47A1</color>
+
+    <color name="normal_button_bg">#616161</color>
+
+    <color name="challenge_button_bg">#B71C1C</color>
+
+    <color name="aged_bronze_button_bg">#6D4C41</color>
+    <color name="aged_bronze_button_text">#000000</color>
+    <color name="dark_iron_button_bg">#424242</color>
+    <color name="dark_iron_button_text">#000000</color>
+    <color name="ancient_gold_button_bg">#FFC107</color>
+    <color name="ancient_gold_button_text">#000000</color>
+    <color name="parchment_bg">#F5F5DC</color>
+    <color name="ink_text">#4E342E</color>
+    <color name="stone_button_bg">#795548</color>
+    <color name="stone_button_text">#000000</color>
+    <color name="wax_seal_accent">#C62828</color>
+
+    <color name="sudoku_thin_lines">#D3D3D3</color>
+    <color name="sudoku_thick_lines">#4E342E</color>
+    <color name="calm_thick_lines">#1E88E5</color>
+    <color name="normal_thick_lines">#4E342E</color>
+    <color name="challenge_thick_lines">#C62828</color>
+</resources>
